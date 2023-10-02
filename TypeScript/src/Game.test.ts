@@ -1,11 +1,11 @@
 
-import { Game } from "./Game"
+import { org.refactoring.Game } from "./org.refactoring.Game"
 
 describe('TicTacToe game', () => {
-    let game : Game;
+    let game : org.refactoring.Game;
 
     beforeEach(() => {
-        game = new Game();
+        game = new org.refactoring.Game();
     });
 
     it('should not allow player O to play first', () => {

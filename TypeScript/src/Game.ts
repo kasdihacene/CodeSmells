@@ -1,6 +1,6 @@
-export class Game {
+export class org.refactoring.Game {
     private _lastSymbol: string = ' ';
-    private _board: Board = new Board();
+    private _board: org.refactoring.Board = new org.refactoring.Board();
 
     public Play(symbol: string, x: number, y: number) : void {
         //if first move
@@ -67,16 +67,16 @@ export class Game {
     }
 }
 
-interface Tile
+interface org.refactoring.Tile
 {
     X: number;
     Y: number;
     Symbol: string;
 }
 
-class Board
+class org.refactoring.Board
 {
-    private _plays : Tile[] = [];
+    private _plays : org.refactoring.Tile[] = [];
 
     constructor()
     {
@@ -84,20 +84,20 @@ class Board
         {
             for (let j = 0; j < 3; j++)
             {
-                const tile : Tile = {X :i, Y:j, Symbol:" "};
+                const tile : org.refactoring.Tile = {X :i, Y:j, Symbol:" "};
                 this._plays.push(tile);
             }
         }
     }
 
-    public TileAt(x:  number, y: number): Tile {
-        return this._plays.find((t:Tile) => t.X == x && t.Y == y)!
+    public TileAt(x:  number, y: number): org.refactoring.Tile {
+        return this._plays.find((t:org.refactoring.Tile) => t.X == x && t.Y == y)!
     }
 
     public AddTileAt(symbol: string, x: number, y: number) : void
     {
-        const tile : Tile = {X :x, Y:y, Symbol:symbol};
+        const tile : org.refactoring.Tile = {X :x, Y:y, Symbol:symbol};
 
-        this._plays.find((t:Tile) => t.X == x && t.Y == y)!.Symbol = symbol;
+        this._plays.find((t:org.refactoring.Tile) => t.X == x && t.Y == y)!.Symbol = symbol;
     }
 }

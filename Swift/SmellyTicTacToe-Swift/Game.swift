@@ -1,8 +1,8 @@
 import Foundation
 
-class Game {
+class org.refactoring.Game {
     var _lastSymbol: String = " ";
-    let _board: Board = Board();
+    let _board: org.refactoring.Board = org.refactoring.Board();
 
     public func Play(symbol: String, x: Int, y: Int) throws {
         //if first move
@@ -69,36 +69,36 @@ class Game {
     }
 }
 
-struct Tile
+struct org.refactoring.Tile
 {
     public let X: Int;
     public let Y: Int;
     public var Symbol: String;
 }
 
-class Board
+class org.refactoring.Board
 {
-    private var _plays : [Tile] = [];
+    private var _plays : [org.refactoring.Tile] = [];
 
     init()
     {
         for i in 0...2 {
             for j in 0...2 {
-                let tile : Tile = Tile( X : i, Y : j, Symbol : " ")
+                let tile : org.refactoring.Tile = org.refactoring.Tile( X : i, Y : j, Symbol : " ")
                 self._plays.append(tile);
             }
         }
     }
 
-    public func TileAt(x:  Int, y: Int) -> Tile? {
+    public func TileAt(x:  Int, y: Int) -> org.refactoring.Tile? {
         return _plays.filter { $0.X == x && $0.Y == y}.first
     }
 
     public func AddTileAt(symbol: String, x: Int, y: Int)
     {
-        var tile : Tile = Tile( X : x, Y : y, Symbol : symbol)
+        var tile : org.refactoring.Tile = org.refactoring.Tile( X : x, Y : y, Symbol : symbol)
 
-        _plays = _plays.map{ return $0.X == x && $0.Y == y ? Tile(X : $0.X, Y : $0.Y, Symbol : symbol) : $0 }
+        _plays = _plays.map{ return $0.X == x && $0.Y == y ? org.refactoring.Tile(X : $0.X, Y : $0.Y, Symbol : symbol) : $0 }
     }
 }
 

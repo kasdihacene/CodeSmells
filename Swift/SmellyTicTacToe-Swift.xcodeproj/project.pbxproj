@@ -14,7 +14,7 @@
 		EBD7E5DC242B7FA30097F8FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBD7E5DB242B7FA30097F8FC /* Preview Assets.xcassets */; };
 		EBD7E5DF242B7FA30097F8FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD7E5DD242B7FA30097F8FC /* LaunchScreen.storyboard */; };
 		EBD7E5EA242B7FA30097F8FC /* SmellyTicTacToe_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7E5E9242B7FA30097F8FC /* SmellyTicTacToe_SwiftTests.swift */; };
-		EBD7E5F5242B7FC30097F8FC /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7E5F4242B7FC30097F8FC /* Game.swift */; };
+		EBD7E5F5242B7FC30097F8FC /* org.refactoring.Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7E5F4242B7FC30097F8FC /* org.refactoring.Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,7 @@
 		EBD7E5E5242B7FA30097F8FC /* SmellyTicTacToe-SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SmellyTicTacToe-SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD7E5E9242B7FA30097F8FC /* SmellyTicTacToe_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmellyTicTacToe_SwiftTests.swift; sourceTree = "<group>"; };
 		EBD7E5EB242B7FA30097F8FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EBD7E5F4242B7FC30097F8FC /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		EBD7E5F4242B7FC30097F8FC /* org.refactoring.Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = org.refactoring.Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +88,7 @@
 				EBD7E5DD242B7FA30097F8FC /* LaunchScreen.storyboard */,
 				EBD7E5E0242B7FA30097F8FC /* Info.plist */,
 				EBD7E5DA242B7FA30097F8FC /* Preview Content */,
-				EBD7E5F4242B7FC30097F8FC /* Game.swift */,
+				EBD7E5F4242B7FC30097F8FC /* org.refactoring.Game.swift */,
 			);
 			path = "SmellyTicTacToe-Swift";
 			sourceTree = "<group>";
@@ -214,7 +214,7 @@
 				EBD7E5D3242B7F9E0097F8FC /* AppDelegate.swift in Sources */,
 				EBD7E5D5242B7F9E0097F8FC /* SceneDelegate.swift in Sources */,
 				EBD7E5D7242B7F9E0097F8FC /* ContentView.swift in Sources */,
-				EBD7E5F5242B7FC30097F8FC /* Game.swift in Sources */,
+				EBD7E5F5242B7FC30097F8FC /* org.refactoring.Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

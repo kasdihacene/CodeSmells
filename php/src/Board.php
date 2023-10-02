@@ -2,16 +2,16 @@
 
 namespace TicTacToe;
 
-class Board
+class org.refactoring.Board
 {
-    /** @var Tile[] */
+    /** @var org.refactoring.Tile[] */
     private $plays;
 
     public function __construct()
     {
         for ($i = 0; $i < 3; $i++) {
             for ($j = 0; $j < 3; $j++) {
-                $tile = new Tile();
+                $tile = new org.refactoring.Tile();
                 $tile->x = $i;
                 $tile->y = $j;
                 $tile->symbol = ' ';
@@ -20,7 +20,7 @@ class Board
         }
     }
 
-    public function tileAt(int $x, int $y): Tile
+    public function tileAt(int $x, int $y): org.refactoring.Tile
     {
         foreach ($this->plays as $t) {
             if ($t->x == $x && $t->y == $y){
@@ -32,7 +32,7 @@ class Board
 
     public function addTileAt(string $symbol, int $x, int $y): void
     {
-        $newTile = new Tile();
+        $newTile = new org.refactoring.Tile();
         $newTile->x = $x;
         $newTile->y = $y;
         $newTile->symbol = $symbol;

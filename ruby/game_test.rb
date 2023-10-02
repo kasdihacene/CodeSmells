@@ -5,7 +5,7 @@ require './game'
 
 describe('TicTacToe game') do
   before do
-    @game = Game.new
+    @game = org.refactoring.Game.new
   end
 
   it 'should not allow player O to play first' do

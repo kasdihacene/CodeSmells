@@ -3,10 +3,10 @@ import XCTest
 @testable import SmellyTicTacToe_Swift
 
 class SmellyTicTacToe_SwiftTests: XCTestCase {
-    var game : Game!
+    var game : org.refactoring.Game!
     
     override func setUp() {
-        game = Game()
+        game = org.refactoring.Game()
     }
 
     func testShould_not_allow_player_O_to_play_first() {

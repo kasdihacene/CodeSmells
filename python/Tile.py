@@ -1,4 +1,4 @@
-class Tile(object):
+class org.refactoring.Tile(object):
     def __init__(self):
         self.X = None
         self.Y = None

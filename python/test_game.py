@@ -1,12 +1,12 @@
 import unittest
 
-from Game import Game
+from org.refactoring.Game import org.refactoring.Game
 
 
 class TestGame(unittest.TestCase):
 
     def setUp(self):
-        self.game = Game()
+        self.game = org.refactoring.Game()
 
     def test_not_allow_player_oto_play_first(self):
         with self.assertRaises(Exception):

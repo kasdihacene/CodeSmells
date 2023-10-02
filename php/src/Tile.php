@@ -2,7 +2,7 @@
 
 namespace TicTacToe;
 
-class Tile
+class org.refactoring.Tile
 {
     /** @var int */
     public $x;

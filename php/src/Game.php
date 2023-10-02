@@ -4,17 +4,17 @@ namespace TicTacToe;
 
 use Exception;
 
-class Game
+class org.refactoring.Game
 {
     /** @var string */
     private $_lastSymbol = ' ';
     
-    /** @var Board */
+    /** @var org.refactoring.Board */
     private $_board;
 
     public function __construct()
     {
-        $this->_board = new Board();
+        $this->_board = new org.refactoring.Board();
     }
 
     /**

@@ -1,3 +1,5 @@
+package org.refactoring;
+
 public class Game {
     private char _lastSymbol = ' ';
     private Board _board = new Board();

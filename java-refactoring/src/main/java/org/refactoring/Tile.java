@@ -1,3 +1,4 @@
+package org.refactoring;
 
 public class Tile
 {

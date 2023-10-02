@@ -1,11 +1,11 @@
-from Board import Board
+from org.refactoring.Board import org.refactoring.Board
 
 
-class Game(object):
+class org.refactoring.Game(object):
 
     def __init__(self):
         self._lastSymbol = ' '
-        self._board = Board()
+        self._board = org.refactoring.Board()
 
     def play(self, symbol, x, y):
         # if first move

@@ -4,16 +4,16 @@ namespace TicTacToe\Tests;
 
 use Exception;
 use PHPUnit\Framework\TestCase;
-use TicTacToe\Game;
+use TicTacToe\org.refactoring.Game;
 
 class GameTest extends TestCase
 {
-    /** @var Game */
+    /** @var org.refactoring.Game */
     private $game;
 
     protected function setUp(): void
     {
-        $this->game = new Game();
+        $this->game = new org.refactoring.Game();
     }
 
     /**

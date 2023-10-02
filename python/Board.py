@@ -1,20 +1,20 @@
-from Tile import Tile
+from org.refactoring.Tile import org.refactoring.Tile
 
 
-class Board(object):
+class org.refactoring.Board(object):
 
     def __init__(self):
         self._plays = []
         for i in range(3):
             for j in range(3):
-                tile = Tile()
+                tile = org.refactoring.Tile()
                 tile.X = i
                 tile.Y = j
                 tile.Symbol = ' '
                 self._plays.append(tile)
 
     def AddTileAt(self, symbol, x, y):
-        new_tile = Tile()
+        new_tile = org.refactoring.Tile()
         new_tile.X = x
         new_tile.Y = y
         new_tile.Symbol = symbol

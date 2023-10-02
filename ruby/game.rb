@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-class Game
+class org.refactoring.Game
   def initialize
     @last_symbol = ' '
-    @board = Board.new
+    @board = org.refactoring.Board.new
   end
 
   def play(symbol, x, y)
@@ -58,7 +58,7 @@ class Game
   end
 end
 
-class Board
+class org.refactoring.Board
   def initialize
     @plays = []
 
