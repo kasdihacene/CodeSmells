@@ -22,6 +22,7 @@ public class Board
         }
     }
 
+    // SRP violation - This behavior is more linked to Tile Class
     public Tile TileAt(int x, int y)
     {
         for (Tile t : _plays) {
@@ -32,6 +33,7 @@ public class Board
         return null;
     }
 
+    // SRP violation - This behavior is more linked to Tile Class
     public void AddTileAt(char symbol, int x, int y)
     {
         Tile newTile = new Tile();
